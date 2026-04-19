@@ -159,7 +159,7 @@ OMBRE_API_KEY=你的API密钥
 > 3. Set `dehydration.base_url` to `https://generativelanguage.googleapis.com/v1beta/openai` in `config.yaml`
 > Also supports DeepSeek, Ollama, LM Studio, vLLM, or any OpenAI-compatible API.
 
-没有 API key 也能用，脱水压缩会降级到本地模式，只是效果差一点。那就写：
+没有 API key 则脱水压缩和自动打标功能不可用（会报错），但记忆的读写和检索仍正常工作。如果暂时不用脱水功能，可以留空：
 
 ```
 OMBRE_API_KEY=

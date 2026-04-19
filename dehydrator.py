@@ -235,8 +235,8 @@ class Dehydrator:
     # ---------------------------------------------------------
     # Dehydrate: compress raw content into concise summary
     # 脱水：将原始内容压缩为精简摘要
-    # Try API first, fallback to local
-    # 先尝试 API，失败则回退本地
+    # API only (no local fallback)
+    # 仅通过 API 脱水（无本地回退）
     # ---------------------------------------------------------
     async def dehydrate(self, content: str, metadata: dict = None) -> str:
         """
